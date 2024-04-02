@@ -1,15 +1,28 @@
-import Signup from "./signup/Signup";
+import React, { useState, useEffect } from 'react';
+import { getAllData } from './util/index';
+
+const URL = 'http://localhost:8000/api/v1/';
 
 function App() {
+  
+  const [message, setMessage] = useState(''); 
+
+  useEffect(() => {
+
+    (async () => {
+      const myData = await getAllData(URL)
+      setMessage(myData.data);
+    })();
+      
+    return () => {
+      console.log('unmounting');
+    }
+
+  }, []);
 
   return (
     <>
-    
-    <div class="container py-3 mx-auto">
-      <Signup />
-   
-    </div>
-
+      <h1>{message}</h1>
     </>
   );
 
