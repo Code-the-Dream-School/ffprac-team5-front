@@ -1,18 +1,3 @@
-// import React from "react";
-// import LoginForm from "./Components/LoginForm";
-
-// function App() {
-//   return (
-//     <div>
-//       {/* <LoginForm /> */}
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// import Switch from 'react-switch';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
