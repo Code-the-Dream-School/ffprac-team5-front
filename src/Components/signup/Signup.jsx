@@ -1,4 +1,7 @@
 function Signup() {
+
+    //todo: remove boostrap classes
+    //todo: combine this file with SignupForm
     return (
         <>
             <form>
