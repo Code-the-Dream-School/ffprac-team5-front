@@ -24,7 +24,6 @@ function Header() {
           </li>
         </ul>
       </nav>
-      {/* <Nav /> */}
     </header>
   );
 }

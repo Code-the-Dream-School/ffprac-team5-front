@@ -21,6 +21,7 @@ function Profile() {
         <li>Place Holder</li>
         <li>Place Holder</li>
         <li>Place Holder</li>
+        <li>Place Holder</li>
       </ul>
 
       <button className="btn">Edit Profile</button>
