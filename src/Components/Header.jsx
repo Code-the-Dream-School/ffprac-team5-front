@@ -1,4 +1,5 @@
 import React from "react";
+// import Nav from "./Nav";
 
 function Header() {
   return (
@@ -8,6 +9,9 @@ function Header() {
         <ul>
           <li>
             <a href="Home">Home</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
           </li>
           <li>
             <a href="SavedRecipes">Saved Recipes</a>
@@ -20,6 +24,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      {/* <Nav /> */}
     </header>
   );
 }
