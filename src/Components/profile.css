@@ -1,35 +1,90 @@
 .container {
-    width: 1200px;
-    height: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+  width: 1200px;
+  height: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.two h1 {
+  font-size: 5rem;
+}
+
+.two p {
+  font-size: 2rem;
+}
+
+hr {
+  color: black;
+  width: 950px;
+  margin-bottom: 2%;
+}
+
+main {
+  width: 1000px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.three h2 {
+  width: 540px;
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+
+.three p {
+  font-size: 2rem;
+}
+
+.three ul {
+  width: 300px;
+}
+
+.three li {
+  font-size: 1.5rem;
+}
 
 .avatar {
-  width: 450px;
-  height: 400px;
-  background-image: url(../assets/images/avatar.avif);
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/images/chef.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .list li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .btn {
-    background-color: yellowgreen;
-    width: 100px;
-    height: 50px;
-    border-radius: 12%;
+  width: 100px;
+  height: 50px;
 }
 
-
-
+.four {
+  margin-right: 5%;
+}

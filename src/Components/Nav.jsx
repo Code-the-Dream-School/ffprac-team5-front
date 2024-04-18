@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import "./nav.css";
 
 const Nav = () => {
   return (
-    <div>
+    <div className="nContainer">
+      <p>Recipe Finder</p>
       <nav>
         <ul>
           <li>
@@ -12,10 +14,10 @@ const Nav = () => {
             <Link to="/Profile">Profile</Link>
           </li>
           <li>
-            <Link to="/LoginForm">Login</Link>
+            <Link to="/SignupForm">Sign Up</Link>
           </li>
           <li>
-            <Link to="/SignupForm">Sign Up</Link>
+            <Link to="/LoginForm">Login</Link>
           </li>
         </ul>
       </nav>

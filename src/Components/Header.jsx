@@ -1,9 +1,9 @@
 import React from "react";
-// import Nav from "./Nav";
+import "./header.css";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <nav>
         <a href="/">Recipe Finder TBD</a>
         <ul>
