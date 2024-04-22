@@ -39,9 +39,7 @@ function NewRecipe() {
 
   return (
     <>
-      <div className="title-container">
-        <Title />
-      </div>
+      <Title />
       <div className="new-recipe-container">
         <form onSubmit={handleSubmit}>
           <div className="form-title">
@@ -53,7 +51,6 @@ function NewRecipe() {
               className="title-input"
             />
           </div>
-
           <div className="form-body">
             <div className="ingredients-container">
               <textarea
