@@ -1,0 +1,48 @@
+.reviewCard {
+  border: 1.5px solid #5f5f5f;
+  padding: 15px;
+  margin: 25px;
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewQuote {
+  font-style: oblique;
+}
+
+.content {
+  display: flex;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewName {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.reviewPrep {
+  font-size: small;
+  font-weight: lighter;
+  margin: 5px;
+}

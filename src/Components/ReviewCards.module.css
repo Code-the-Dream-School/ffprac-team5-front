@@ -1,0 +1,11 @@
+.reviewCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviewSectionTitle {
+  margin-top: 70px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+}

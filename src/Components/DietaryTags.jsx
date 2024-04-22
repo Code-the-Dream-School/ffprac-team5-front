@@ -1,7 +1,7 @@
-export default function DietaryTags(){
+export default function DietaryTags() {
   return (
     <div>
-      <p>dietary tags</p>
+      <p>Dietary tags</p>
     </div>
-  )
+  );
 }

@@ -1,0 +1,28 @@
+.formContainer {
+  text-align: center;
+}
+.formP {
+  text-align: center;
+  font-size: 16px;
+}
+.input {
+  margin-right: 10px;
+  border: 1.5px thin rgb(144, 144, 144);
+  padding: 8px;
+  width: 400px;
+}
+
+.searchButton {
+  border-color: black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 20px;
+}
+
+.searchButton:hover {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}

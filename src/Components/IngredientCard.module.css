@@ -1,0 +1,19 @@
+.ingredientName {
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  text-align: center;
+}
+
+.imgStyle {
+  border-radius: 15px;
+}
+
+.ingredientName:hover,
+.imgStyle:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}

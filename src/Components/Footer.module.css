@@ -1,0 +1,6 @@
+.footerDisplay {
+  margin: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
