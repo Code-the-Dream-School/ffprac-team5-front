@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NewRecipe.css";
+import Title from "./Title";
 
 function NewRecipe() {
   const [recipe, setRecipe] = useState({
@@ -37,98 +38,103 @@ function NewRecipe() {
   const totalTime = parseInt(recipe.prepTime) + parseInt(recipe.cookTime);
 
   return (
-    <div className="new-recipe-container">
-      <form onSubmit={handleSubmit}>
-        <div className="form-title">
-          <input
-            name="title"
-            value={recipe.title}
-            onChange={handleChange}
-            placeholder="Recipe Title"
-            className="title-input"
-          />
-        </div>
-
-        <div className="form-body">
-          <div className="ingredients-container">
-            <textarea
-              name="ingredients"
-              value={recipe.ingredients}
+    <>
+      <div className="title-container">
+        <Title />
+      </div>
+      <div className="new-recipe-container">
+        <form onSubmit={handleSubmit}>
+          <div className="form-title">
+            <input
+              name="title"
+              value={recipe.title}
               onChange={handleChange}
-              placeholder="Ingredients"
-              className="ingredients-area"
+              placeholder="Recipe Title"
+              className="title-input"
             />
           </div>
-          <div className="right-side">
-            <input
-              name="tags"
-              value={recipe.tags}
-              onChange={handleChange}
-              placeholder="Tags"
-              className="tags-input"
-            />
-            <div className="image-upload-container">
-              <label htmlFor="file-upload" className="upload-area">
-                {recipe.imageUrl ? (
-                  <img
-                    src={recipe.imageUrl}
-                    alt="Uploaded Recipe Image"
-                    className="recipe-image"
-                  />
-                ) : (
-                  <div className="image-placeholder">
-                    Click to upload recipe image
-                  </div>
-                )}
-              </label>
-              <input
-                type="file"
-                id="file-upload"
-                onChange={handleImageChange}
-                className="image-upload-input"
-                style={{ display: "none" }} 
+
+          <div className="form-body">
+            <div className="ingredients-container">
+              <textarea
+                name="ingredients"
+                value={recipe.ingredients}
+                onChange={handleChange}
+                placeholder="Ingredients"
+                className="ingredients-area"
               />
             </div>
-            <div className="details">
-              <div className="detail-item">
-                <label className="detail-label">PREP</label>
+            <div className="right-side">
+              <input
+                name="tags"
+                value={recipe.tags}
+                onChange={handleChange}
+                placeholder="Tags"
+                className="tags-input"
+              />
+              <div className="image-upload-container">
+                <label htmlFor="file-upload" className="upload-area">
+                  {recipe.imageUrl ? (
+                    <img
+                      src={recipe.imageUrl}
+                      alt="Uploaded Recipe Image"
+                      className="recipe-image"
+                    />
+                  ) : (
+                    <div className="image-placeholder">
+                      Click to upload recipe image
+                    </div>
+                  )}
+                </label>
                 <input
-                  name="prepTime"
-                  value={recipe.prepTime}
-                  onChange={handleChange}
-                  placeholder="minutes"
+                  type="file"
+                  id="file-upload"
+                  onChange={handleImageChange}
+                  className="image-upload-input"
+                  style={{ display: "none" }}
                 />
               </div>
-              <div className="detail-item">
-                <label className="detail-label">COOK</label>
-                <input
-                  name="cookTime"
-                  value={recipe.cookTime}
-                  onChange={handleChange}
-                  placeholder="minutes"
-                />
-              </div>
-              <div className="detail-item">
-                <label className="detail-label">TOTAL TIME</label>
-                <span className="total-time">
-                  {isNaN(totalTime) ? 0 : totalTime} minutes
-                </span>
+              <div className="details">
+                <div className="detail-item">
+                  <label className="detail-label">PREP</label>
+                  <input
+                    name="prepTime"
+                    value={recipe.prepTime}
+                    onChange={handleChange}
+                    placeholder="minutes"
+                  />
+                </div>
+                <div className="detail-item">
+                  <label className="detail-label">COOK</label>
+                  <input
+                    name="cookTime"
+                    value={recipe.cookTime}
+                    onChange={handleChange}
+                    placeholder="minutes"
+                  />
+                </div>
+                <div className="detail-item">
+                  <label className="detail-label">TOTAL TIME</label>
+                  <span className="total-time">
+                    {isNaN(totalTime) ? 0 : totalTime} minutes
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <textarea
-          name="directions"
-          value={recipe.directions}
-          onChange={handleChange}
-          placeholder="Directions"
-          className="directions-area"
-        />
-        <div className="save-button">
-          <button type="submit">Save</button>
-        </div>
-      </form>
-    </div>
+          <textarea
+            name="directions"
+            value={recipe.directions}
+            onChange={handleChange}
+            placeholder="Directions"
+            className="directions-area"
+          />
+          <div className="save-button">
+            <button type="submit">Save</button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

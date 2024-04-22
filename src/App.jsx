@@ -1,9 +1,9 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Nav from './components/Nav';
-import Profile from "./components/Profile";
+import Nav from './Components/Nav';
+import Profile from "./Components/Profile";
 import Home from './pages/Home';
 import Login from './pages/Login';
-import NewRecipe from './components/NewRecipe';
+import NewRecipe from './Components/NewRecipe';
 
 function App() {
   return (
