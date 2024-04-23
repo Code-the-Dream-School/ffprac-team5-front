@@ -36,8 +36,29 @@ body {
 
 }
 
-.field {
+.form > h2 {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 4px;
+}
 
+.field {
+    margin: 10px;
+}
+
+.field > label {
+
+}
+
+.field > input {
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
 }
 
 
