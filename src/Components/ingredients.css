@@ -1,0 +1,136 @@
+.container {
+  width: 1200px;
+  height: 100%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.two h1 {
+  font-size: 5rem;
+  font-family: Inter;
+}
+
+.two p {
+  font-size: 2rem;
+  font-family: Inter;
+}
+
+hr {
+  color: black;
+  width: 950px;
+  margin-bottom: 2%;
+}
+
+main {
+  width: 1200px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: self-start;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.three h2 {
+  width: 543px;
+  font-size: 2.5rem;
+  margin-left: 2%;
+  border: thin solid black;
+  padding: 4%;
+}
+
+.three p {
+  font-size: 2rem;
+  font-family: Inter;
+  display: flex;
+  align-self: self-start;
+}
+
+.three ul {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-self: flex-start;
+  border: thin solid black;
+  padding: 10%;
+}
+
+.three li {
+  font-size: 1.5rem;
+  font-family: Inter;
+}
+
+.avatar2 {
+  width: 400px;
+  height: 300px;
+  background-image: url(../assets/images/eggplant.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.list li {
+  list-style-type: none;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+}
+
+.four {
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.times {
+  font-size: 1rem;
+  font-family: Inter;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.five {
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-evenly;
+}
+
+.five .directions {
+  display: flex;
+  flex-direction: column;
+  justify-self: space-evenly;
+}
+.five .buttons {
+  display: flex;
+  justify-content: row;
+  align-self: flex-end;
+}
+
+.five .buttons button {
+  margin-left: 5%;
+}
