@@ -3,7 +3,7 @@ import Nav from './Components/Nav';
 import Profile from "./Components/Profile";
 import Home from './pages/Home';
 import Login from './pages/Login';
-import NewRecipe from './Components/NewRecipe';
+import NewRecipe from './pages/NewRecipe';
 
 function App() {
   return (
