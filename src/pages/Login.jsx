@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import styles from './../css/Login.module.css'
+import styles from './../css/Login.module.css';
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -28,7 +29,7 @@ const Login = () => {
 
       <div className={styles.right}>
         <h1>Recipe Finder</h1>
-        <h6>A tool to help you use up those leftover ingredients</h6>
+        <p>A tool to help you use up those leftover ingredients</p>
         <form onSubmit={handleSubmit} className={styles.form}>
           <h2>Log In or Sign Up for Free</h2>
           <div className={styles.field}>
@@ -55,9 +56,9 @@ const Login = () => {
         </form>
         <div className={styles.field}>
           <div>Does not have an account?</div>
-          <div>Create New Account</div>
+          <div><Link to='/SignUpForm'>Create New Account</Link></div>
           <div>- or -</div>
-          <div>Continue as Guest</div>
+          <div className={styles.highlighted}>Continue as Guest</div>
         </div>
       </div>
     </div>
