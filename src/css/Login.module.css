@@ -51,7 +51,7 @@ h1 {
 }
 
 .field > label {
-
+    font-weight: bold;
 }
 
 .field > input {
@@ -63,14 +63,19 @@ h1 {
 button {
     padding: 10px;
     margin: 10px;
-}
-
-
-.bold {
-
+    background-color: #fff;
+    border: none;
 }
 
 .highlighted {
     color: #888;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.question {
+    margin-bottom: 10px;
+}

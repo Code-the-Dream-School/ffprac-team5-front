@@ -55,7 +55,7 @@ const Login = () => {
           <button type="submit">Login</button>
         </form>
         <div className={styles.field}>
-          <div>Does not have an account?</div>
+          <div className={styles.question}>Does not have an account?</div>
           <div><Link to='/SignUpForm'>Create New Account</Link></div>
           <div>- or -</div>
           <div className={styles.highlighted}><Link to='/'>Continue as Guest</Link></div>
