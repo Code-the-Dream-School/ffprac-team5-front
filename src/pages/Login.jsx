@@ -33,7 +33,7 @@ const Login = () => {
         <form onSubmit={handleSubmit} className={styles.form}>
           <h2>Log In or Sign Up for Free</h2>
           <div className={styles.field}>
-            <label>Email:</label>
+            <label className={styles.highlighted}>Email:</label>
             <input
               type="email"
               value={email}
@@ -43,7 +43,7 @@ const Login = () => {
             />
           </div>
           <div className={styles.field}>
-            <label>Password:</label>
+            <label className={styles.highlighted}>Password:</label>
             <input
               type="password"
               value={password}
@@ -58,7 +58,7 @@ const Login = () => {
           <div>Does not have an account?</div>
           <div><Link to='/SignUpForm'>Create New Account</Link></div>
           <div>- or -</div>
-          <div className={styles.highlighted}>Continue as Guest</div>
+          <div className={styles.highlighted}><Link to='/'>Continue as Guest</Link></div>
         </div>
       </div>
     </div>
