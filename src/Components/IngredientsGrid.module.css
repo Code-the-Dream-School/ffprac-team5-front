@@ -1,0 +1,13 @@
+.ingredientsContainer {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(6, 100px);
+  justify-content: center;
+}
+
+.commonIngredientsTitle {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-bottom: 35px;
+  font-family: Inter;
+}
