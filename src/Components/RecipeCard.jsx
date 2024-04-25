@@ -1,7 +1,11 @@
-export default function RecipeCard(){
-  return(
+import React from "react";
+import "./RecipeCard.css";
+
+export default function RecipeCard({ name, imageUrl }) {
+  return (
     <div>
-      <p>Recipe card</p>
+      <img id="cardImage" src={imageUrl} alt={name} />
+      <p id="recipeName">{name}</p>
     </div>
-  )
+  );
 }

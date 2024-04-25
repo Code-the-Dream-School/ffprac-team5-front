@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pageContainer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+
+  margin: auto;
+}
+
+#pageTitle {
+  text-shadow: 1px 4px 4px rgb(122, 122, 122);
+  margin-top: 75px;
+}
+
+#recipeTitle {
+  margin-top: 50px;
+  margin-left: -500px;
+  font-size: xx-large;
+}
+
+#recipeSectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  outline: solid;
+  box-shadow: 1px 7px 4px rgb(122, 122, 122);
+  align-items: center;
+  width: 1150px;
+}
+
+#recipeContentContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0px 50px 0px;
+  width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#recipeImage {
+  width: 300px;
+  height: 300px;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.pageButtons {
+  margin: 0 20px 20px 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+}
+
+.pageButtons:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.pageButtons:active {
+  background-color: rgb(155, 155, 155);
+}
+
+#recipesGrid,
+#pageFooter {
+  margin-top: 150px;
+}

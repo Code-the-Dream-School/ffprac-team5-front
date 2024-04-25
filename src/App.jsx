@@ -4,7 +4,8 @@ import Profile from "./components/Profile";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Search from "./pages/Search";
-import NewRecipe from './pages/NewRecipe';
+import NewRecipe from "./pages/NewRecipe";
+import Recipe from "./pages/Recipe";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/NewRecipe" element={<NewRecipe />} />
-        <Route path="/Ingredients" element={<Ingredients /> } />
+        <Route path="/Ingredients" element={<Ingredients />} />
+        <Route path="/Recipe" element={<Recipe />} />
       </Routes>
     </BrowserRouter>
   );
