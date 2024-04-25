@@ -40,6 +40,7 @@ function NewRecipe() {
   return (
     <>
       <Title />
+      <SearchBar />
       <div className="new-recipe-container">
         <form onSubmit={handleSubmit}>
           <div className="form-title">
