@@ -1,9 +1,9 @@
 import React from "react";
-// import Nav from "./Nav";
+import "./header.css";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <nav>
         <a href="/">Recipe Finder TBD</a>
         <ul>
@@ -11,7 +11,10 @@ function Header() {
             <a href="Home">Home</a>
           </li>
           <li>
-            <a href="/profile">Profile</a>
+            <a href="/Profile">Profile</a>
+          </li>
+          <li>
+            <a href="/Ingredients">Ingredients</a>
           </li>
           <li>
             <a href="SavedRecipes">Saved Recipes</a>
