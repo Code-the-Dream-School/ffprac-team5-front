@@ -14,6 +14,12 @@ const Nav = () => {
             <Link to="/Profile">Profile</Link>
           </li>
           <li>
+            <Link to="/NewRecipe">New Recipe</Link>
+          </li>
+          <li>
+            <Link to="/LoginForm">Login</Link>
+          </li>
+          <li>
             <a href="/Ingredients">Ingredients</a>
           </li>
           <li>
