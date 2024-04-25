@@ -1,5 +1,6 @@
 .ingredientName {
   font-weight: bold;
+  font-family: Inter;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -15,5 +16,5 @@
 .ingredientName:hover,
 .imgStyle:hover {
   cursor: pointer;
-  border: 2px solid black;
+  outline: 2px solid black;
 }

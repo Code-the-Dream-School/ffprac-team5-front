@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import Title from "../components/Title";
-import DietaryTags from "../components/DietaryTags";
 import IngredientsGrid from "../components/IngredientsGrid";
 import ReviewCards from "../components/ReviewCards";
 import Footer from "../components/Footer";
@@ -61,7 +60,6 @@ function Search() {
               setSearchTerm={setSearchTerm}
             />
           </div>
-          <DietaryTags />
           <IngredientsGrid onIngredientClick={handleIngredientClick} />
         </div>
         <ReviewCards />
