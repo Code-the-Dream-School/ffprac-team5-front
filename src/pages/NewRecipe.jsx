@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NewRecipe.css";
-import Title from "/src/Components/Title";
+import Title from "../shared-components/Title";
 
 function NewRecipe() {
   const [recipe, setRecipe] = useState({
@@ -40,7 +40,6 @@ function NewRecipe() {
   return (
     <>
       <Title />
-      <SearchBar />
       <div className="new-recipe-container">
         <form onSubmit={handleSubmit}>
           <div className="form-title">

@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import SearchForm from "../components/SearchForm";
-import Title from "../components/Title";
-import IngredientsGrid from "../components/IngredientsGrid";
-import ReviewCards from "../components/ReviewCards";
-import Footer from "../components/Footer";
+import SearchForm from "../shared-components/SearchForm";
+import Title from "../shared-components/Title";
+import IngredientsGrid from "../shared-components/IngredientsGrid";
+import ReviewCards from "../shared-components/ReviewCards";
+import Footer from "../shared-components/Footer";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");

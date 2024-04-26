@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Recipe.css";
-import Title from "../Components/Title";
-import RecipesGrid from "../Components/RecipesGrid";
-import Footer from "../Components/Footer";
+import Title from "../shared-components/Title";
+import RecipesGrid from "../shared-components/RecipesGrid";
+import Footer from "../shared-components/Footer";
 import carrots from "../assets/images/carrots.jpg";
 
 function Recipe() {
