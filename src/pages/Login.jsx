@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styles from './../css/Login.module.css';
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -21,29 +23,45 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-          autoComplete="current-email"
-        />
+    <div className={styles.container}>
+      <div className={styles.left}>
       </div>
-      <div>
-        <label>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-          autoComplete="current-password"
-        />
+
+      <div className={styles.right}>
+        <h1>Recipe Finder</h1>
+        <p>A tool to help you use up those leftover ingredients</p>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <h2>Log In or Sign Up for Free</h2>
+          <div className={styles.field}>
+            <label className={styles.highlighted}>Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              autoComplete="current-email"
+            />
+          </div>
+          <div className={styles.field}>
+            <label className={styles.highlighted}>Password:</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              autoComplete="current-password"
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div className={styles.field}>
+          <div className={styles.question}>Does not have an account?</div>
+          <div><Link to='/SignUpForm'>Create New Account</Link></div>
+          <div>- or -</div>
+          <div className={styles.highlighted}><Link to='/'>Continue as Guest</Link></div>
+        </div>
       </div>
-      <button type="submit">Login</button>
-    </form>
+    </div>
   );
 };
 

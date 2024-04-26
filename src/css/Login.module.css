@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+html, body {
+    height: 100%
+}
+
+body {
+    background-color: #f5f9fa;
+    background-image: url('./../assets/images/login.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    content: "";
+}
+
+.right {
+    float: right;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.form {
+
+}
+
+.form > h2 {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 4px;
+}
+
+.field {
+    margin: 10px;
+}
+
+.field > label {
+    font-weight: bold;
+}
+
+.field > input {
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.highlighted {
+    color: #888;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.question {
+    margin-bottom: 10px;
+}
