@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
-html, body {
-    height: 100%
-}
-
+html,
 body {
-    background-color: #f5f9fa;
-    background-image: url('./../assets/images/login.jpg');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    font-family: "DM Sans", sans-serif;
+    height: 100%
 }
 
 .container {
@@ -36,11 +28,9 @@ h1 {
     text-align: center;
 }
 
-.form {
+.form {}
 
-}
-
-.form > h2 {
+.form>h2 {
     border-bottom: 2px solid black;
     width: 100%;
     padding: 4px;
@@ -50,11 +40,11 @@ h1 {
     margin: 10px;
 }
 
-.field > label {
+.field>label {
     font-weight: bold;
 }
 
-.field > input {
+.field>input {
     width: 100%;
     padding: 4px;
     margin: 4px;
