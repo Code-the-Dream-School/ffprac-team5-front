@@ -12,13 +12,13 @@ function Search() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSearch = (searchTerm) => {
-    //const token = //
-    // const url = //
+    const token = "jwt_secret_recipeapp";
+    const url = `http://localhost:8000/api/v1/recipe/search?term=${searchTerm}`;
 
     console.log("Searching for recipes with ingredients:", searchTerm);
 
     setIsLoading(true);
-    fetch(url`${searchTerm}`, {
+    fetch(url, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
