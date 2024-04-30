@@ -5,6 +5,7 @@ import Title from "../shared-components/Title";
 import IngredientsGrid from "../shared-components/IngredientsGrid";
 import ReviewCards from "../shared-components/ReviewCards";
 import Footer from "../shared-components/Footer";
+import RecipesGrid from "../shared-components/RecipesGrid";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,13 +13,13 @@ function Search() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSearch = (searchTerm) => {
-    //const token = //
-    // const url = //
+    const token = "jwt_secret_recipeapp";
+    const url = `http://localhost:8000/api/v1/recipe/search?term=${searchTerm}`;
 
     console.log("Searching for recipes with ingredients:", searchTerm);
 
     setIsLoading(true);
-    fetch(url`${searchTerm}`, {
+    fetch(url, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -32,7 +33,7 @@ function Search() {
         return response.json();
       })
       .then((data) => {
-        setRecipe(data);
+        setRecipe(data.recipes);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -60,7 +61,11 @@ function Search() {
               setSearchTerm={setSearchTerm}
             />
           </div>
-          <IngredientsGrid onIngredientClick={handleIngredientClick} />
+          {recipe.length > 0 ? (
+            <RecipesGrid recipes={recipe} />
+          ) : (
+            <IngredientsGrid onIngredientClick={handleIngredientClick} />
+          )}
         </div>
         <ReviewCards />
       </div>
